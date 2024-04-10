@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="C:\project\angular.min.js"></script>
+        <script src="C:\project\mark.html"></script>
+    </head>
+    <body ng-app="myapp" ng-controller="myctrl">
+        <h2>Marks list</h2>
+        <table border="1">
+            <tr>
+                <td>Enter Firsrt Name:</td>
+                <td colspan="2"><input type="text" ng-model="student.firstname"></td>
+            </tr>
+            <tr>
+                <td>Enter Last:</td>
+                <td colspan="2"><input type="text" ng-model="student.lastname"></td>
+            </tr>
+            <tr><td>Name:</td><td colspan="2">{{student.fullname()}}</td></tr>
+            <tr><td rowspan=8>subject:</td>
+            <th>subject name</th>
+            <th>marks</th>
+        <tr ng-repeat="subject in student.subjects">
+            <td>{{subject.name}}</td>
+            <td>{{subject.marks}}</td>
+        </tr> </td> </tr>
+        <tr> <td>total</td><td>{{student.tot}}</td></tr>
+        </table>
+    </body>
+</html>

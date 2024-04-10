@@ -1,0 +1,19 @@
+
+    <h1>Hotel Information</h1>
+    Enter Address<input type="text" ng-model="abc"><br>
+    <br>
+    <table border='1'>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Contact no</th>
+        </tr>
+        <tr ng-repeat="h in hotel|filter:abc">
+            <td>{{h.name}}</td>
+            <td>{{h.addr}}</td>
+            <td>{{h.cno}}</td>
+        </tr>
+    </table>
+</body>
+</html>
+

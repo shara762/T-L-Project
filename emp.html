@@ -1,0 +1,15 @@
+<h1 style="background-color:plum;"> <center>Employee Information</center></h1>
+<table border="1">
+    <tr>
+        <th>Eno</th>
+        <th>Ename</th>
+        <th>Address</th>
+        <th>Salary</th>
+    </tr>
+    <tr ng-repeat="x in emp">
+        <td>{{x.eno}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.addr}}</td>
+        <td>{{x.sal}}</td>
+    </tr>
+</table>

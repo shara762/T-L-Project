@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WELCOME TO T&L</title>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="index.js"></script>
+   <style>
+        h1{background:black ;}
+     
+        h1{color: aqua;}
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: palegreen;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+
+.d1{
+    display:flex;
+}
+
+
+    </style>
+</head>
+<body background="">
+   
+   <div>
+    <center><h1> WELCOME TO<br> T & L<br> INFORMATION</h1></center> 
+    <ul class="navbar navbar-dark bg-primary">
+        <li><a href="#!home">HOME</a></li>
+        <li><a href="#!medium">MEDIUM</a></li>
+        <li><a href="#!location">LOCATION</a></li>
+        <li><a href="#!rating">RATING</a></li>
+    </ul>
+   </div>
+ 
+    <div class="d1">
+       
+    <div ng-view>
+
+    </div>
+    </div>
+  
+</body>
+</html>

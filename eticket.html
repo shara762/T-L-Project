@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <script src="C:\project\angular.min.js"></script>
+        <script src="C:\project\eticket.js"></script>
+    </head>
+    <body ng-app="myapp" ng-controller="myctrl">
+        <h2>Angular js E-Ticket Application</h2>
+        <table border="1">
+            <tr>
+                <td>Enter Name:</td>
+                <td><input type="text" ng-model="name"></td>
+            </tr>
+            <tr>
+                <td>Enter Address:</td>
+                <td><input type="text" ng-model="addr"></td>
+            </tr>
+            <tr>
+                <td>Enter Contact Number:</td>
+                <td><input type="text" ng-model="con"></td>
+            </tr>
+            <tr>
+                <td>Enter Source:</td>
+                <td><select ng-model="source">
+                    <option value="">
+                    <option value="Pune">Pune
+                        <option value="Mumbai">Mumbai
+                            <option value="Pimpari">Pimpari
+                        
+                            </select>
+                </td>
+            </tr>
+            <td>Enter Destination:</td>
+                <td><select ng-model="destination">
+                    <option value="">
+                    <option value="Pune">Pune
+                        <option value="Mumbai">Mumbai
+                            <option value="Pimpari">Pimpari
+                        
+                            </select>
+                </td>
+            </tr>
+            <tr>
+            <td>Enter Journey Date:</td>
+                <td><input type="text" ng-model="jdate"></td>
+                </tr>
+                    <tr>
+                        <td>Enter of Pasenger Name 1:</td>
+                        <td><input type="text" ng-model="p1"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter of Pasenger Name 2:</td>
+                        <td><input type="text" ng-model="p2"></td>
+                    </tr>
+                    </table>
+                    <table border="2" align="center">
+                        <tr>
+                            <td colspan="3" align="center">Indian Railway Counter</td>
+                        </tr>
+                        <tr>
+                            <td>Name:{{name}}</td>
+                            <td>Address:{{addr}}</td>
+                            <td>Contact:{{con}}</td>
+                        </tr>
+                        <tr>
+                            <td>Source:{{source}}</td>
+                            <td>Destination:{{destination}}</td>
+                            <td>Journey Date:{{jdate}}</td>
+                        </tr>
+                        <tr>
+                            <td>Pasenger1:</td>
+                            <td><input type="text" value={{p1}}></td>
+                            <td><input type="radio" name= p >Male
+                            <input type="radio" name= p >Female</td>
+                        </tr>
+                        <tr>
+                            <td>Pasenger2:</td>
+                            <td><input type="text" value={{p2}}></td>
+                            <td><input type="radio" name= pp >Male
+                            <input type="radio" name= pp >Female</td>   
+                        </tr>
+                    </table>
+    </body>
+    </html>
+             
+    
+
+
+
+
+
+        </table>
+
+    </body>
+</html>
